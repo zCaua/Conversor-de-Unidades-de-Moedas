@@ -30,3 +30,21 @@ document.getElementById('convertEuroBtn').addEventListener('click', function () 
         `Resultado: € ${converted.toFixed(2)} EUR`;
 
 });
+
+// Conversor BRL --> GBP
+
+document.getElementById('convertLibraBtn').addEventListener('click', function () {
+const brlValue = parseFloat(document.getElementById('gbpInput').value);
+const libraRate = 7.50;
+
+if(isNaN(brlValue) || brlValue <= 0) {
+    document.getElementById('resultLibra').innerText =
+    "Erro: Digite um valor maior que zero.";
+return;
+
+}
+const converted = brlValue / libraRate;
+
+document.getElementById('resultLibra').innerText =
+    `Resultado: £ ${converted.toFixed(2)} GBP`;
+})
