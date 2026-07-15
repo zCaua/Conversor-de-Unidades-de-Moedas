@@ -47,4 +47,8 @@ const converted = brlValue / libraRate;
 
 document.getElementById('resultLibra').innerText =
     `Resultado: £ ${converted.toFixed(2)} GBP`;
+
+// Limpa o campo após a conversão
+document.getElementById('gbpInput').value = '';
+document.getElementById('gbpInput').focus();
 })
