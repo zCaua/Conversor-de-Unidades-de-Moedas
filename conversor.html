@@ -4,76 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moedas</title>
+    <!-- Vínculo com o arquivo CSS criado -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Conversor de Moedas (BRL para USD)</h1>
-    <p>Versão 2.0 - Conversão de Real para Dólar e Euro</p>
-    
-    <div>
-        <label for="brlInput">Valor em Real (R$):</label>
-        <input type="number" id="brlInput" placeholder="Ex: 100.00">
+    <div class="container">
+        <h1>Conversor de Moedas (BRL para USD)</h1>
+        <p class="version">Versão 5 - Conversão de Real para Dólar, Euro, Libra e Peso Argentino</p>
+        
+        <!-- Bloco USD -->
+        <div class="converter-section">
+            <h2>Dólar Americano (USD)</h2>
+            <div class="input-group">
+                <label for="brlInput">Valor em Real (R$):</label>
+                <input type="number" id="brlInput" placeholder="Ex: 100.00">
+            </div>
+            <button id="convertBtn">Converter para Dólar</button>
+            <h3 id="result"></h3>
+            <small>*Cotação fixa utilizada para testes: $1.00 USD = R$ 5.00</small>
+        </div>
+
+        <hr>
+
+        <!-- Bloco EUR -->
+        <div class="converter-section">
+            <h2>Euro (EUR)</h2>
+            <div class="input-group">
+                <label for="eurInput">Valor em Real (R$):</label>
+                <input type="number" id="eurInput" placeholder="Ex: 100.00">
+            </div>
+            <button id="convertEuroBtn">Converter para Euro</button>
+            <h3 id="resultEuro"></h3>
+            <small>*Cotação fixa utilizada para testes: €1.00 EUR = R$ 6.00</small>
+        </div>
+
+        <hr>
+
+        <!-- Bloco GBP -->
+        <div class="converter-section">
+            <h2>Libra Esterlina (GBP)</h2>
+            <div class="input-group">
+                <label for="gbpInput">Valor em Real (R$):</label>
+                <input type="number" id="gbpInput" placeholder="Digite um valor em Reais">
+            </div>
+            <button id="convertLibraBtn">Converter para Libra</button>
+            <h3 id="resultLibra"></h3>
+            <small>*Cotação fixa utilizada para testes: £1.00 GBP = R$ 7.50</small>
+        </div>
+
+        <hr>
+
+        <!-- Bloco ARS -->
+        <div class="converter-section">
+            <h2>Peso Argentino (ARS)</h2>
+            <div class="input-group">
+                <label for="arsInput">Valor em Real (R$):</label>
+                <input type="number" id="arsInput" placeholder="Ex: 100.00">
+            </div>
+            <button id="convertArsBtn">Converter para Peso Argentino</button>
+            <h3 id="resultArs"></h3>
+            <small>*Cotação fixa utilizada para testes: ARS 1 = R$ 0,005</small>
+        </div>
     </div>
-    <br>
-    <button id="convertBtn">Converter para Dólar</button>
-    
-    <h3 id="result"></h3>
-
-    <footer>
-        <small>*Cotação fixa utilizada para testes: $1.00 USD = R$ 5.00</small>
-    </footer>
-
-    <hr>
-
-<h2>Conversor de Moedas (BRL para EUR)</h2>
-<hr>
-<p>Conversão de Real para Euro</p>
-
-<div>
-    <label for="eurInput">Valor em Real (R$):</label>
-    <input type="number" id="eurInput" placeholder="Ex: 100.00">
-</div>
-
-<br>
-
-<button id="convertEuroBtn">Converter para Euro</button>
-
-<h3 id="resultEuro"></h3>
-
-<small>*Cotação fixa utilizada para testes: €1.00 EUR = R$ 6.00</small>
-
-   <hr>
-
-<h3>Conversor de Moedas (BRL para GBP)</h3>
-<hr>
-<p>Conversão de Real para Libra</p>
-
-<div>
-    <label for="gbpInput">Valor em Real (R$):</label>
-    <input type="number" id="gbpInput" placeholder="Digite um valor em Reais">
-</div>
-
-<br>
-
-<button id="convertLibraBtn">Converter para Libra</button>
-
-<h3 id="resultLibra"></h3>
-
-<small>*Cotação fixa utilizada para testes: £1.00 GBP = R$ 7.50</small>
-
-<h2>Conversor de Moedas (BRL para ARS)</h2>
-
-<div>
-    <label for="arsInput">Valor em Real (R$):</label>
-    <input type="number" id="arsInput" placeholder="Ex: 100.00">
-</div>
-
-<br>
-
-<button id="convertArsBtn">Converter para Peso Argentino</button>
-
-<h3 id="resultArs"></h3>
-
-<small>*Cotação fixa utilizada para testes: ARS 1 = R$ 0,005</small>
 
     <script src="CoApp.js"></script>
 </body>
