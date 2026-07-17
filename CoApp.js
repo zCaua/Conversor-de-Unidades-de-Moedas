@@ -52,3 +52,24 @@ document.getElementById('resultLibra').innerText =
 document.getElementById('brlInput').value = '';
 document.getElementById('brlInput').focus();
 })
+
+// Conversão BRL -> ARS
+document.getElementById('convertArsBtn').addEventListener('click', function () {
+
+    const brlValue = parseFloat(document.getElementById('arsInput').value);
+    const arsRate = 0.005; // Cotação fictícia para testes
+
+    if (isNaN(brlValue) || brlValue <= 0) {
+        document.getElementById('resultArs').innerText =
+            "Erro: Digite um valor maior que zero.";
+        return;
+    }
+
+    const converted = brlValue / arsRate;
+
+    document.getElementById('resultArs').innerText =
+        `Resultado: $ ${converted.toFixed(2)} ARS`;
+
+    document.getElementById('arsInput').value = "";
+    document.getElementById('arsInput').focus();
+});
