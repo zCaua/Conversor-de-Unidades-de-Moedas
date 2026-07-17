@@ -12,3 +12,4 @@ Este é um projeto académico de um conversor de moedas que corre inteiramente n
 * **v1.0 (Antigo):** Conversor funcional de Real para Dólar (BRL -> USD) utilizando taxa fixa de conversão. Sem foco em design ou CSS.
 * **v2.0 (Antigo):** Conversor funcional de Real para Dólar/Euro (BRL -> USD, EUR) utilizando taxa fixa de conversão. Sem foco em design ou CSS.
 * **v3.0 (Atual):** Conversor funcional de Real para Dólar/Euro/Libra (BRL -> USD, EUR, GPB) utilizando taxa fixa de conversão. Sem foco em design ou CSS.
+* **v4.0 (Atual):** Conversor funcional de Real para Dólar/Euro/Libra/Peso Argentino (BRL -> USD, EUR, GBP, ARS) utilizando taxa fixa de conversão. Adicionada a conversão para Peso Argentino (ARS) e atualização da documentação (README). Sem foco em design ou CSS.
